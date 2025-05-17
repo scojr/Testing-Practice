@@ -7,3 +7,7 @@ export function capitalize(string) {
   const restOfWord = string.slice(1).toLowerCase();
   return firstLetter.toUpperCase() + restOfWord;
 }
+
+export function reverseString(string) {
+  return string.split("").reverse().join("");
+}

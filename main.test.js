@@ -1,4 +1,4 @@
-import { sum, capitalize } from "./main";
+import { sum, capitalize, reverseString } from "./main";
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -10,7 +10,7 @@ test('capitalize string "apple" to "Apple"', () => {
 });
 
 // reverseString
-test.skip('reverse string "apple" to "elppa"', () => {
+test('reverse string "apple" to "elppa"', () => {
   expect(reverseString("apple")).toBe("elppa");
 });
 
