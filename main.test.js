@@ -1,4 +1,4 @@
-import { sum, capitalize, reverseString } from "./main";
+import { sum, capitalize, reverseString, calculator } from "./main";
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -15,19 +15,19 @@ test('reverse string "apple" to "elppa"', () => {
 });
 
 // calculator
-test.skip('adds 1 + 2 to equal 3', () => {
+test('adds 1 + 2 to equal 3', () => {
   expect(calculator.add(1, 2)).toBe(3);
 });
 
-test.skip('subtracts 5 - 3 to equal 2', () => {
+test('subtracts 5 - 3 to equal 2', () => {
   expect(calculator.subtract(5, 3)).toBe(2);
 });
 
-test.skip('divides 25 / 5 to equal 5', () => {
+test('divides 25 / 5 to equal 5', () => {
   expect(calculator.divide(25, 5)).toBe(5);
 });
 
-test.skip('multiplies 4 * 3 to equal 12', () => {
+test('multiplies 4 * 3 to equal 12', () => {
   expect(calculator.multiply(4, 3)).toBe(12);
 });
 
