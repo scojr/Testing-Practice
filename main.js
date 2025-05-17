@@ -9,7 +9,7 @@ export function capitalize(string) {
 }
 
 export function reverseString(string) {
-  return string.split("").reverse().join("");
+  return string.split('').reverse().join('');
 }
 
 export const calculator = {
@@ -25,4 +25,20 @@ export const calculator = {
   multiply: function (a, b) {
     return a * b;
   }
+}
+
+export function caeserCipher(string, shiftFactor) {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const cipher = (alphabet.slice(shiftFactor) + alphabet.slice(0, shiftFactor));
+  const alphabetArray = (alphabet + alphabet.toUpperCase()).split('');
+  const cipherArray = (cipher + cipher.toUpperCase()).split('');
+  const product = [];
+  string.split('').forEach(char => {
+    if (alphabetArray.includes(char)) {
+      const index = alphabetArray.indexOf(char);
+      product.push(cipherArray[index])
+    }
+    else product.push(char);
+  })
+  return product.join('');
 }

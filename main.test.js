@@ -1,4 +1,4 @@
-import { sum, capitalize, reverseString, calculator } from "./main";
+import { sum, capitalize, reverseString, calculator, caeserCipher } from "./main";
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -33,16 +33,16 @@ test('multiplies 4 * 3 to equal 12', () => {
 
 // caeserCipher
 
-test.skip('shift "xyz" by 3 to return "abc"', () => {
-  expect(caeserCipher('xyz', 3).toBe("abc"));
+test('shift "xyz" by 3 to return "abc"', () => {
+  expect(caeserCipher('xyz', 3)).toBe('abc');
 });
 
-test.skip('shift "HeLLo" by 3 to return "KhOOr"', () => {
-  expect(caeserCipher('HeLLo', 3).toBe("KhOOr"));
+test('shift "HeLLo" by 3 to return "KhOOr"', () => {
+  expect(caeserCipher('HeLLo', 3)).toBe('KhOOr');
 });
 
-test.skip('shift "Hello, World!" by 3 to return "Khoor, Zruog!"', () => {
-  expect(caeserCipher('Hello, World!', 3).toBe("Khoor, Zruog!"));
+test('shift "Hello, World!" by 3 to return "Khoor, Zruog!"', () => {
+  expect(caeserCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
 });
 
 // analyzeArray
