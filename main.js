@@ -42,3 +42,11 @@ export function caeserCipher(string, shiftFactor) {
   })
   return product.join('');
 }
+
+export function analyzeArray(array) {
+  const average = array.reduce((a, c) => a + c) / array.length;
+  let min = array.toSorted()[0];
+  let max = array.toSorted()[array.length - 1];
+  const length = array.length;
+  return { average, min, max, length };
+}

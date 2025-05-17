@@ -1,4 +1,4 @@
-import { sum, capitalize, reverseString, calculator, caeserCipher } from "./main";
+import { sum, capitalize, reverseString, calculator, caeserCipher, analyzeArray } from "./main";
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -54,6 +54,6 @@ const expectedOutcome = {
   length: 6,
 }
 
-test.skip('analyze array to object with expected outcome', () => {
-  expect(analyzeArray([1, 8, 3, 4, 2, 6]).toMatchObject(expectedOutcome))
+test('analyze array to object with expected outcome', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toMatchObject(expectedOutcome)
 });
