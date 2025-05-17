@@ -32,7 +32,6 @@ test('multiplies 4 * 3 to equal 12', () => {
 });
 
 // caeserCipher
-
 test('shift "xyz" by 3 to return "abc"', () => {
   expect(caeserCipher('xyz', 3)).toBe('abc');
 });
@@ -46,7 +45,6 @@ test('shift "Hello, World!" by 3 to return "Khoor, Zruog!"', () => {
 });
 
 // analyzeArray
-
 const expectedOutcome = {
   average: 4,
   min: 1,
