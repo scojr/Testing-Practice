@@ -1,11 +1,11 @@
-import { sum } from "./main";
+import { sum, capitalize } from "./main";
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
 });
 
 // capitalize
-test.skip('capitalize string "apple" to "Apple"', () => {
+test('capitalize string "apple" to "Apple"', () => {
   expect(capitalize("apple")).toBe("Apple");
 });
 
